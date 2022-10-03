@@ -29,7 +29,6 @@ bgImg.onload = () => {
 
 
 var speeds = {
-    pause: 500,
     veryslow: 350,
     slow: 170,
     normal: 100,
@@ -37,7 +36,7 @@ var speeds = {
 };
 
 var textLines = [
-        { string: "I’m weak!!! ", speed: speeds.pause},
+        { string: "I’m weak!!! ", speed: speeds.veryslow},
         { string: "The Parker Solar Probe has survived the treacherous journey of making it to the sun because of you! ", speed: speeds.normal},
         { string: "The probe is currently living rent free in space. It continues to orbit the sun and collect data for us. ", speed: speeds.normal},
         { string: "We are high key learning what goes beyond our earth. ", speed: speeds.normal},
@@ -81,6 +80,11 @@ setTimeout(() => {
     revealOneCharacter(characters);
 }, 600)
 
-if(!(Array.isArray(textLines) && textLines.length)){
-    console.log("I'm here!!!");
+function confirmFunction(){
+    if(window.confirm("You completed all the missions! I'm so over it... Are you?")){
+        window.location.href='https://c1phan.github.io/phanily_endPage/';
+    }
+    else{
+        window.location.href='https://c1phan.github.io/dialogue4/'
+    }
 }
