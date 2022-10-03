@@ -10,15 +10,6 @@ p {
     font-size: 14px;
 }
 
-h1{
-    margin-top: 45px;
-    text-align: center;
-}
-
-h1, h4 {
-    color: #f6d1fb;
-}
-
 .container{
     position: absolute;
     top: 50%;
@@ -32,11 +23,17 @@ canvas {
     border: 3px solid black;
 }
 
+button {
+    background-color: #f6d1fb;
+    border-color: black;
+    margin-top: 5px;
+}
+
 .text {
     width: 470;
     position: absolute;
-    top: 80%;
-    left: 72%;
+    top: 84%;
+    left: 64%;
     -moz-transform: translateX(-55%) translateY(-45%);
     -webkit-transform: translateX(-55%) translateY(-45%);
     transform: translateX(-75%) translateY(-55%);
