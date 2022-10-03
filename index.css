@@ -32,7 +32,7 @@ button {
 .text {
     width: 470;
     position: absolute;
-    top: 84%;
+    top: 86%;
     left: 64%;
     -moz-transform: translateX(-55%) translateY(-45%);
     -webkit-transform: translateX(-55%) translateY(-45%);
